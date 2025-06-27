@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 USER=$(id -u)
-SCRIPT_NAME=$(ecgo $0 | cut -d "." -f1 )
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1 )
 TIME_STAMP=$(date +%F-%H-%M-%S)
 LOG_FILE=/tmp/$SCRIPT_NAME-$TIME_STAMP.log 
 echo "script name is $LOG_FILE"
