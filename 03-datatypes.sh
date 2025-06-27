@@ -37,10 +37,8 @@ do
     then 
         echo -e  "$G already installed   $N "
     else
-        echo -e "$R not installed need to install  $N "
+        echo -e "$R not installed...... need to install  $i  $N "
         dnf install $i -y  
     fi 
 
-done 
-
-
+done
