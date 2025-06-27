@@ -33,12 +33,12 @@ echo "all packages are $@"
 for i in $@ 
 do 
     dnf list installed $i  &>>$LOG_FILE 
-     if [ $1 -eq 0 ]
+     if [ $? -eq 0 ]
     then 
-        echo -e  "$G already installed   $N "
+        echo -e  "$G already installed $1   $N "
     else
         echo -e "$R not installed...... need to install  $i  $N "
-        dnf install $i -y  
+        dnf install $i -y &>>$LOG_FILE  
     fi 
 
 done
