@@ -26,17 +26,17 @@ echo "exit status of the previosu command is $?"
 echo "enter user name "
 read $USERNAME
 echo "enter passwd "
-read -r $PASSWORD
+read -s   $PASSWORD
 
-echo "user is $USERNAME & password is $PASSWORD"
+echo "user is ::$USERNAME & password is $PASSWORD"
 
 # conditions 
 
-echo 
+echo "enter the age" 
 
 read age 
 
-if [ age -ge 18 ]
+if [ $age -le 18 ]
 then 
     echo "you are eligible for voting & Age is $age"
 else
