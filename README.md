@@ -10,4 +10,7 @@ there are 2 ways
 
 source ./<anotherfile>.sh
     pid issaame 
-     changes in the current file  after calling the another files by over-riding the values of the another script 
+    changes in the current file  after calling the another files by over-riding the values of the another script 
+    variable values are changed here 
+    because running script will take over the calling script insde to the current script 
+    
