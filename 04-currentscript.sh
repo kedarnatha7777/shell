@@ -6,7 +6,7 @@ echo "printing  before  calling the another script wishes:${wishes}"
 echo "pid is of current shell script  $$"
 
 # ./05-another-script.sh 
-scorce ./05-another-script.sh 
+source ./05-another-script.sh 
 
 echo "printing after calling the another script wishes: ${wishes}"
 
