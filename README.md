@@ -7,9 +7,10 @@ there are 2 ways
 ./<anotherfile> 
     pid of 2 scripts are  different 
     no changes in the current file 
-     
+    we can't use when 2 scripts have relation 
 
 source ./<anotherfile>.sh
+    we can use when 2 scripts have relation 
     pid issaame 
     changes in the current file  after calling the another files by over-riding the values of the another script 
     variable values are changed here 
