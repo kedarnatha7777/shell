@@ -3,8 +3,8 @@
 set -e -x  
 
 Failure(){
-    echo "line number is "${LINEND}
-    echo "command is "${BASH_COMMAD}
+    echo "line number is "$1
+    echo "command is "$2
 }
 
 trap 'Failure ${LINEND} "BASH_COMMAD"' ERR 
