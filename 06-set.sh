@@ -1,5 +1,14 @@
 #!/bin/bash 
 
+set -e -x  
+
+Failure(){
+    echo "line number is ${LINEND}"
+    echo "command is ${BASH_COMMAD}"
+}
+
+trap 'Failure ${LINEND} "BASH_COMMAD"' ERR 
+
 USER=$(id -u)
 
 if [ $USER -eq 0 ]
