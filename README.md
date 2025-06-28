@@ -5,12 +5,14 @@ there are 2 ways
   2.   source ./<anotherfile>.sh 
 
 ./<anotherfile> 
-    pid is different 
+    pid of 2 scripts are  different 
     no changes in the current file 
+     
 
 source ./<anotherfile>.sh
     pid issaame 
     changes in the current file  after calling the another files by over-riding the values of the another script 
     variable values are changed here 
+    cahnges happen in other script will not affected in the cuurrent script
     because running script will take over the calling script insde to the current script 
-    
+
