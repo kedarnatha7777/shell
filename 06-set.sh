@@ -7,7 +7,7 @@ Failure(){
     echo "command is "$2
 }
 
-trap 'Failure ${LINEND} "BASH_COMMAD"' ERR 
+trap 'Failure ${LINENO} "BASH_COMMAND"' ERR 
 
 USER=$(id -u)
 
