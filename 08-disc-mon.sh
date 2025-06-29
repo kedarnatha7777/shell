@@ -9,7 +9,7 @@ do
     FOLDER=$(echo $LINE |  awk -F " "  '{print $NF}')
     if [ $USAGE -ge $disc_threshold ]
     then    
-        echo "$FOLDER is more the $disc_utilization , current usages is $USAGE"
+        echo "$FOLDER is more the $disc_threshold , current usages is $USAGE"
     fi 
 
     # lines=$LINE
