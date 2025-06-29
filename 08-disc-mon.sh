@@ -12,6 +12,7 @@ do
     #     echo "$FOLDER is more the $disc_utilization , current usages is $USAGE"
     lines=$LINE
     echo $lines
-dond <<< $disc_utilization
+
+done <<< $disc_utilization
 
 
