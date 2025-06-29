@@ -16,5 +16,15 @@ else
 fi 
 
 
-find . -name "*.log" -mtime +13
-echo ""
+FILES=$(find . -name "*.log" -mtime +14)
+
+echo "files to delete $FILES"
+
+while IFS= read -r LINE
+do 
+    echo "files to delete" $FILES  
+
+done <<< $FILES
+
+
+
