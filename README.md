@@ -17,3 +17,14 @@ source ./<anotherfile>.sh
     cahnges happen in other script will not affected in the cuurrent script
     because running script will take over the calling script insde to the current script 
 
+
+# crontab 
+to edit crontab -e 
+to list crontab -l 
+
+# logs of crontab 
+check in the logs of the crontab are 
+  must have sudo access 
+    /var/logs 
+    tail -f cron 
+    
