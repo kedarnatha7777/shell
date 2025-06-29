@@ -10,7 +10,8 @@ do
     # if [ $USAGE -gt $disc_threshold ]
     # then    
     #     echo "$FOLDER is more the $disc_utilization , current usages is $USAGE"
-    echo $LINE
+    lines=$LINE
+    echo $lines
 dond <<< $disc_utilization
 
 
