@@ -3,7 +3,7 @@
 disc_utilization=$(df -hT | grep xfs )
 disc_threshold=5
 
-while IFS= read -r LINE 
+while  IFS= read -r LINE
 do 
     # USAGE=$(echo $LINE |  awk -F " "  '{print $6F}' | cut -d "%" -f)
     # FOLDER=$(echo $LINE |  awk -F " "  '{print $6F}' )
@@ -12,7 +12,7 @@ do
     #     echo "$FOLDER is more the $disc_utilization , current usages is $USAGE"
 
     lines=$LINE
-    echo$lines
+    echo $lines
     
 
 done <<< $disc_utilization
