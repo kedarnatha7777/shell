@@ -22,7 +22,7 @@ echo "files to delete $FILES"
 
 while IFS= read -r LINE
 do 
-    echo "files to delete" $FILES 
+    echo "files to delete $FILES" 
     rm -rf $FILES 
 
 done <<< $FILES
