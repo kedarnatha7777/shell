@@ -7,5 +7,6 @@ MEM_THRESHOLD=300 # in mb
 
 while IFS= read -r LINE 
 do 
-    echo $MEM_THRESHOLD -$mem_FREE
+    mem=$($MEM_THRESHOLD -$mem_FREE)
+    echo $mem
 done <<< $mem_FREE
