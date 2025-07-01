@@ -28,3 +28,5 @@ check in the logs of the crontab are
     /var/logs 
     tail -f cron 
     
+# IFS -> intermediate filed sapareter 
+  
